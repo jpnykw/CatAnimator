@@ -76,14 +76,14 @@ function setupElements(){
 	picElements=[];
 	for(i=0;i<3;i++){
 		picElements.push(new Object());
-		picElements[picElements.length-1].set($CANV.width,$CANV.height/3.5,i,window.innerWidth/3.82,window.innerWidth/3.82);
+		picElements[picElements.length-1].set($CANV.width,$CANV.height/3.5,i);
 	}
 }
 
 function drawElements(){
 	for(i=0;i<picElements.length;i++){		
 		var $E=picElements[i];
-		$CONT.drawImage($E.img,$E.x,$E.y+((outFlag.mode&&i==1)*-35),$E.width,$E.height);
+		$CONT.drawImage($E.img,$E.x,$E.y+((outFlag.mode&&i==1)*-35),window.innerWidth/3.82,window.innerWidth/3.82);
 	}
 }
 
@@ -100,13 +100,11 @@ function movePositions(dx,dy){
 
 // Object methods
 
-Object.prototype.set=function (x,y,id,width,height){
+Object.prototype.set=function (x,y,id){
 	this.x=x;
 	this.y=y;
 	this.img=new Image();
 	this.img.src=`picture/pic_${id}.png`;
-	this.width=width;
-	this.height=height;
 }
 
 // Array methods
