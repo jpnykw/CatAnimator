@@ -61,7 +61,7 @@ function baseInit(){
 	colorTimer=new Date().getTime();
 
 	bgm=new Audio();
-	bgm.src='bgm/Dyro & Dannic - Radical [OUT NOW!].mp3';
+	bgm.src='bgm/Dyro Dannic.mp3';
 	bgm.loop=true;
 
 	bgm.play();
