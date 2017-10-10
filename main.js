@@ -40,7 +40,7 @@ window.onload=()=>{
 
 		nowTimer=new Date().getTime();
 
-		if(outFlag.mode&&nowTimer-outFlag.fTime>2250)outFlag.stop();
+		if(outFlag.mode&&nowTimer-outFlag.fTime>970)outFlag.stop();
 
 		if(nowTimer-colorTimer>256){colorTimer=nowTimer;$CANV.style.backgroundColor=colorSet.random();}
 	},1);
