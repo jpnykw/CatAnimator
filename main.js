@@ -76,7 +76,7 @@ function setupElements(){
 	picElements=[];
 	for(i=0;i<3;i++){
 		picElements.push(new Object());
-		picElements[picElements.length-1].set($CANV.width,$CANV.height/3.5,i,window.innerWidth/2,window.innerHeight/2);
+		picElements[picElements.length-1].set($CANV.width,$CANV.height/3.5,i,window.innerWidth/3,window.innerWidth/3);
 	}
 }
 
