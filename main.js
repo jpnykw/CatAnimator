@@ -30,6 +30,7 @@ window.onload=()=>{
 	baseInit();
 	setupElements();
 
+	bgm.play();
 	setInterval(()=>{
 		$CONT.clearRect(0,0,$CANV.width,$CANV.height);
 		setCanvasSize();
@@ -63,8 +64,6 @@ function baseInit(){
 	bgm=new Audio();
 	bgm.src='Dyro Dannic.mp3';
 	bgm.loop=true;
-
-	bgm.play();
 }
 
 function setCanvasSize(){
